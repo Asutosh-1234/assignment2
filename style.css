@@ -1,5 +1,5 @@
 :root{
-    --color-theme-bg: #14120b;
+    --color-theme-bg: #140b13;
     --color-theme-fg: #edecec;
     --color-theme-fg-02: #d7d6d5;
     --color-theme-card-hex: #1b1913;
@@ -21,13 +21,16 @@
 }
 
 body{
+    letter-spacing: 0px;
     background-color: var(--color-theme-bg);
     color: white;
     font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #fff;
 }
 
-header{
+header{    
+    position: sticky;
+    top: 0;
+    overflow: hidden;
     background-color: var(--color-theme-bg);
     width: 100%;
     height: 52px;
@@ -36,6 +39,7 @@ header{
 }
 
 nav{
+    
     width: 86%;
     display: flex;
     justify-content: space-between;
@@ -63,13 +67,14 @@ nav{
 
 .nav-mid{
     display: flex;
-    gap: 34px;
+    gap: 32px;
+    margin-left: 56px;
 }
 
 .nav-mid a{
     text-decoration: none;
     font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 21px;
     color: var(--color-theme-fg);
@@ -77,14 +82,26 @@ nav{
 
 .btn{
     background-color: var(--color-theme-fg);
-    font-size: 0.82rem;
-    padding: 0.369rem 0.656rem 0.377rem;
+    font-size: 0.9rem;
+    border: 1px solid #edecec;
     border-radius: 18px;
     font-weight: 500;
     line-height: 14px;
 }
 
-.btn :hover{
+
+
+.sing-in{
+    height: 24px;
+}
+
+.download{
+    padding: 0.369rem 0.656rem 0.377rem 0.80rem;
+    border: none;
+}
+
+.btn :hover ,.download .sing-in{ 
+    opacity: 90%;
     background-color: var(--color-theme-fg-02);
 } 
 
@@ -93,6 +110,7 @@ nav{
     color: var(--color-theme-fg);
     border: 0px solid var(--color-theme-fg);
     box-shadow: 0 0 0 0.26px var(--color-theme-fg);
+    padding: 0 10px 0 10px;
 }
 
 .video{
@@ -104,3 +122,91 @@ nav{
     box-shadow: 0 0 0 0.26px var(--color-theme-fg);
 }
 
+.nav-btns{
+    display: flex;
+    gap: 10px;
+
+}
+
+main{
+    width: 86%;
+    margin: auto;
+    border: 1px solid #2b2923; 
+}
+
+.hero-section-img{
+    margin-top: 66px;
+}
+
+.hero-section-img img{
+    width: 100%;
+}
+
+
+.hero-section{
+    margin-top: 105px;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32.5px;
+    color: var(--color-theme-fg);
+    letter-spacing: 0.01rem;
+}
+
+.hero-section p.spread{
+    letter-spacing: 100px;
+}
+
+.download-btn-cta{
+    margin-top: 20px;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(20, 18, 11);
+    padding: 14px 24px;
+}
+
+.arrow{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.section2{
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 p{
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(237, 236, 236);
+    margin-bottom: 21px;
+}
+
+.brand-card{
+    
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 10px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 154px;
+    height: 94px;
+    background-color: var(--color-theme-card-hex);
+    border-radius: 6px;
+}
+
+.brand img{
+    height: 40px;
+    width: auto;
+}
