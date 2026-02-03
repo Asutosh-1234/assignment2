@@ -1,5 +1,5 @@
 :root{
-    --color-theme-bg: #100d10;
+    --color-theme-bg: #14120b;
     --color-theme-fg: #edecec;
     --color-theme-fg-02: #d7d6d5;
     --color-theme-card-hex: #1b1913;
@@ -265,4 +265,54 @@ main{
 
 .p-color{
     color:rgb(168, 162, 150)
+}
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    align-items: center;
+}
+.section4 h2{
+    font-size: 36px;
+    font-weight: 450;
+}
+
+.feedback{
+    margin-top: 54px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 280px 280px;
+    gap: 10px;
+}
+
+.feedback-card{
+    background-color: var(--color-theme-card-01-hex);
+    padding: 18px 18px 14px 18px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(237, 236, 236);
+}
+
+.feedback-card img{
+    width: 40px;
+    border-radius: 4px;
+}
+
+.details{
+    display: flex;
+    gap: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.work{
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
 }
