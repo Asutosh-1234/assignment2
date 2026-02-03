@@ -1,5 +1,5 @@
 :root{
-    --color-theme-bg: #140b13;
+    --color-theme-bg: #100d10;
     --color-theme-fg: #edecec;
     --color-theme-fg-02: #d7d6d5;
     --color-theme-card-hex: #1b1913;
@@ -90,7 +90,6 @@ nav{
 }
 
 
-
 .sing-in{
     height: 24px;
 }
@@ -153,10 +152,6 @@ main{
     letter-spacing: 0.01rem;
 }
 
-.hero-section p.spread{
-    letter-spacing: 100px;
-}
-
 .download-btn-cta{
     margin-top: 20px;
     font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -192,7 +187,8 @@ main{
 .brand-card{
     
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(8,154.25px);
+    grid-template-rows: repeat(2, 96px);
     gap: 10px;
 }
 
@@ -200,8 +196,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 154px;
-    height: 94px;
     background-color: var(--color-theme-card-hex);
     border-radius: 6px;
 }
@@ -209,4 +203,66 @@ main{
 .brand img{
     height: 40px;
     width: auto;
+}
+
+.section3{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.features{
+    background-color: var(--color-theme-card-hex);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    border-radius: 6px;
+}
+
+.text1, .text3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: -1px;
+    margin-right: 30px
+}
+
+.text2 a,
+.text3 a,
+.text1 a {
+    margin-top: 20px;
+    color: rgb(233, 62, 62);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.text2 p,
+.text3 p,
+.text1 p{
+    font-weight: 400;
+}
+
+.img2 img,
+.img3 img,
+.img1 img{
+    width: 840px;
+}
+
+.part2{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.p-color{
+    color:rgb(168, 162, 150)
 }
