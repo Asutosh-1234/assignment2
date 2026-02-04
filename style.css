@@ -12,6 +12,7 @@
     --color-theme-card-hover-light-hex: #1d1b15;
     --color-theme-product-chrome: var(--color-theme-bg);
     --color-theme-product-editor: var(--color-theme-card-hex);
+    --font : CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -59,6 +60,7 @@ body{
     background-color: var(--color-theme-bg);
     color: white;
     font-family: CursorGothic;
+    overflow-x: hidden;
 }
 
 header{    
@@ -186,15 +188,20 @@ main{
     word-spacing: -1px;
 }
 
+.hero-section h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+
 .download-btn-cta{
     margin-top: 20px;
     font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     border-radius: 30px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 16px;
     color: rgb(20, 18, 11);
-    padding: 14px 24px;
+    padding: 14px 22px;
 }
 
 .arrow{
@@ -492,4 +499,83 @@ main{
 .s7-img img{
     margin: 56px 0;
     border-radius: 4px;
+}
+
+.section8{
+    background-color: var(--color-theme-card-01-hex);
+    margin-top: 67.2px;
+    padding: 90px 114px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.sec-8{
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap: 24px;
+}
+
+.h2-s8{
+    grid-column: 1 / 4;
+}
+
+.h2-s8 h2{
+    font-size: 16px;
+}
+
+.card-sec8{
+    grid-column: 7 / 19;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-s8{
+    background-color: var(--color-theme-card-03-hex);
+    padding: 14px;
+    border-radius: 6px;
+    padding-right: 60px;
+}
+
+.card-s8-3{
+    padding-right: 0px;
+}
+
+.card-s8 a{
+    text-decoration: none;
+} 
+
+.card-link h3{
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(237, 236, 236);
+}
+
+.card-s8 p {
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+}
+
+.time{
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+    margin-top: 18px;
+}
+
+.posts{
+    grid-column: 7/15;
+}
+
+.posts a{
+    text-decoration: none;
+    color: rgb(221, 71, 1);
 }
