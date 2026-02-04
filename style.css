@@ -464,3 +464,32 @@ main{
     text-decoration: none;
     color: rgb(245, 78, 0);
 }
+
+.section7{
+    margin-top: 150px;
+}
+
+.section7-texts{
+    width: 45%;
+}
+
+.section7 h2{
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.2px;
+    color: rgb(237, 236, 236);
+    word-spacing: -1px;
+}
+
+.section7-texts button{
+    margin-top: 20px;
+    padding: 14px 22px;
+    border-radius: 60px;
+    font-size: 16px;
+}
+
+.s7-img img{
+    margin: 56px 0;
+    border-radius: 4px;
+}
