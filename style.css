@@ -518,10 +518,14 @@ main{
 
 .h2-s8{
     grid-column: 1 / 4;
+    position: sticky;
+    top: 70px;
+    align-self: start;
 }
 
 .h2-s8 h2{
     font-size: 16px;
+    font-weight: 400;
 }
 
 .card-sec8{
@@ -578,4 +582,24 @@ main{
 .posts a{
     text-decoration: none;
     color: rgb(221, 71, 1);
+}
+
+.section9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 134px;
+}
+
+.section9 h1{
+    font-size: 68px;
+    font-weight: 400;
+}
+
+.section9 button{
+    margin-top: 21px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
 }
