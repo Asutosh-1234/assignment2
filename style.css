@@ -404,9 +404,63 @@ main{
     color: rgb(233, 61, 61);
 }
 
-
 .container-s5 .card img{
+    margin-top: 20px;
     width: 99%;
     display: block;
     border-radius: 4px;
+}
+
+.section6{
+    margin-top: 190px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-s6{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 8px;
+}
+
+.section6 h2{
+    font-size: 26px;
+    font-weight: 350;
+    color: var(--color-theme-fg-02);
+}
+
+.s6-card{
+    background-color: var(--color-theme-card-01-hex);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.s6-card time{
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+    font: 14px sans-serif;
+}
+
+.s6-card span{
+    border: 0.5px solid  oklab(0.943853 0.00107113 0.000336707 / 0.6);
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+    border-radius: 14px;
+    padding: 2px 6px 2px 9px;
+    font: 0.9em sans-serif;
+    margin-right: 10px;
+}
+
+.s6-card p{
+    margin-top: 18px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.section6 a{
+    text-decoration: none;
+    color: rgb(245, 78, 0);
 }
